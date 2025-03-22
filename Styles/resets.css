@@ -1,0 +1,101 @@
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    user-select: none;
+    font-family: "Arial";
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: var(--clr-text);
+}
+
+input:focus {
+    outline: 1px solid var(--clr-primary) !important;
+}
+
+/* Reset for <table> and related elements */
+table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    /* Ensures no space between borders */
+}
+
+th,
+td {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #ccc; Optional: Add a border to table cells */
+    text-align: left;
+    /* Optional: Adjust text alignment */
+    vertical-align: middle;
+    /* Optional: Adjust vertical alignment */
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+
+button {
+    all: unset;
+    /* display: inline-flex; */
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+a {
+    text-decoration: none;
+    /* Removes underline */
+    color: inherit;
+    /* Inherits color from the parent */
+    background: none;
+    /* Removes background if any */
+    border: none;
+    /* Removes border if any */
+    outline: none;
+    /* Removes focus outline */
+}
+
+/* ====================================== */
+
+ul {
+    list-style: none;
+}
+
+/* Target the X mark icons inside any input container */
+.main-body-owners-infos-search i.fa-xmark,
+.main-body-search-controls-search i.fa-xmark {
+    cursor: pointer;
+}
+
+.hide-element{
+    display: none;
+}

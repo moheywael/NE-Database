@@ -1,0 +1,33 @@
+/* Toast Notification */
+.popup-notification {
+    position: fixed;
+    bottom: 1rem; /* Start from 2rem */
+    left: 50%;
+
+    transform: translateX(-50%); /* Initially slightly lower */
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out, visibility 0.4s;
+    
+    background: var(--clr-primary);
+    color: var(--clr-text-alt);
+    
+    padding: calc(var(--padding) / 1.5);
+    border-radius: var(--border-radius-sm);
+    font-size: 85%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999999;
+}
+
+/* Show notification */
+.popup-notification.show {
+    transform: translateX(-50%) translateY(-1rem); /* Move up to 2rem position */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hide notification */
+.popup-notification.hide {
+    transform: translateX(-50%) translateY(1rem); /* Moves down slightly */
+    opacity: 0;
+    visibility: hidden;
+}

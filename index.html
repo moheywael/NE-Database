@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="Styles/resets.css">
+    <link rel="stylesheet" href="Styles/variables.css">
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/main/main-header.css">
+    <link rel="stylesheet" href="Styles/main/main-body.css">
+    <link rel="stylesheet" href="Styles/main/sidebar.css">
+    <link rel="stylesheet" href="Styles/main/drawer.css">
+    <link rel="stylesheet" href="Styles/main/popup-notification.css">
+
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="Styles/media-queries.css">
+
+    <!-- Scripts -->
+    <script src="Scripts/script.js" defer></script>
+    <script src="Scripts/drawer.js" defer></script>
+    <script src="Scripts/closeOutside.js" defer></script>
+    <script src="Scripts/dataFunctiomality.js" defer></script>
+
+    <!-- Vendors -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>NE Database - v1.0</title>
+</head>
+
+<body>
+    <!-- Out Of The Flow -->
+    <div class="overlay"></div>
+
+    <div class="msan-cabinet-details-more-info-drawer">
+        <!-- Code here -->
+        <div class="msan-cabinet-details-more-info-drawer-title">
+            <span>Cabinet more details</span>
+        </div>
+        <div class="msan-cabinet-details-more-info-drawer-body">
+
+            <div class="main-body-view-body-card">
+                <div class="main-body-view-body-card-title">
+                    <!-- <i class="fa-solid fa-map"></i> -->
+                    <span>Cabinet SLA-ID</span>
+                </div>
+                <div class="main-body-view-body-card-text-section" data-msan-sla-id-view>
+                    <span></span>
+                    <i class="fa-regular fa-clone text-section-icon"></i>
+                </div>
+            </div>
+
+            <div class="main-body-view-body-card-wrapper">
+
+                <div class="main-body-view-body-card">
+                    <div class="main-body-view-body-card-title">
+                        <!-- <i class="fa-solid fa-map"></i> -->
+                        <span>Cascaded (Fiber)</span>
+                    </div>
+                    <div class="main-body-view-body-card-text-section" data-msan-cascaded-fiber-view>
+                        <span></span>
+                        <i class="fa-regular fa-clone text-section-icon"></i>
+                    </div>
+                </div>
+
+                <div class="main-body-view-body-card">
+                    <div class="main-body-view-body-card-title">
+                        <!-- <i class="fa-solid fa-map"></i> -->
+                        <span>Cascaded (Power)</span>
+                    </div>
+                    <div class="main-body-view-body-card-text-section" data-msan-cascaded-power-view>
+                        <span></span>
+                        <i class="fa-regular fa-clone text-section-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-body-view-body-card">
+                <div class="main-body-view-body-card-title">
+                    <!-- <i class="fa-solid fa-map"></i> -->
+                    <span>TE-Data IP</span>
+                </div>
+                <div class="main-body-view-body-card-text-section" data-msan-te-ip-view>
+                    <span></span>
+                    <i class="fa-regular fa-clone text-section-icon"></i>
+                </div>
+            </div>
+            <div class="main-body-view-body-card">
+                <div class="main-body-view-body-card-title">
+                    <!-- <i class="fa-solid fa-map"></i> -->
+                    <span>Router Port</span>
+                </div>
+                <div class="main-body-view-body-card-text-section" data-msan-router-port-view>
+                    <span></span>
+                    <i class="fa-regular fa-clone text-section-icon"></i>
+                </div>
+            </div>
+
+            <div class="main-body-view-body-card">
+                <div class="main-body-view-body-card-title">
+                    <!-- <i class="fa-solid fa-map"></i> -->
+                    <span>Host Name</span>
+                </div>
+                <div class="main-body-view-body-card-text-section" data-msan-host-name-view>
+                    <span></span>
+                    <i class="fa-regular fa-clone text-section-icon"></i>
+                </div>
+            </div>
+
+            <div class="main-body-view-body-card">
+                <div class="main-body-view-body-card-title">
+                    <!-- <i class="fa-solid fa-map"></i> -->
+                    <span>Parent Host Name</span>
+                </div>
+                <div class="main-body-view-body-card-text-section" data-msan-parent-host-name-view>
+                    <span></span>
+                    <i class="fa-regular fa-clone text-section-icon"></i>
+                </div>
+            </div>
+
+            <div class="main-body-view-body-card">
+                <div class="main-body-view-body-card-title">
+                    <!-- <i class="fa-solid fa-map"></i> -->
+                    <span>OLA Duration</span>
+                </div>
+                <div class="main-body-view-body-card-text-section" data-msan-ola-duration-view>
+                    <span></span>
+                    <i class="fa-regular fa-clone text-section-icon"></i>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="popup-notification">
+        this is a notification
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-header-icon">
+                <i class="fa-solid fa-bowling-ball"></i>
+            </div>
+
+            <div class="sidebar-header-title">
+                <div class="sidebar-header-title-name">
+                    <span>NE</span>
+                    Database
+                </div>
+                <div class="sidebar-header-title-version">
+                    <span>Version 1.0</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-body">
+            <div class="sidebar-body-navigation">
+
+                <ul class="sidebar-body-navigation-list">
+                    <div class="sidebar-body-navigation-list-title">Navigation</div>
+                    <li class="sidebar-body-navigation-list-link active">
+                        <button>
+                            <i class="fa-solid fa-shield"></i>
+                            <span>Cabinet Inspector</span>
+                        </button>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </li>
+                    <li class="sidebar-body-navigation-list-link">
+                        <button>
+                            <i class="fa-solid fa-message"></i>
+                            <span>Messages Generation</span>
+                        </button>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </li>
+                    <li class="sidebar-body-navigation-list-link">
+                        <button>
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            <span>My Requests</span>
+                        </button>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </li>
+                </ul>
+
+                <ul class="sidebar-body-navigation-list">
+                    <div class="sidebar-body-navigation-list-title">Database</div>
+                    <li class="sidebar-body-navigation-list-link">
+                        <button>
+                            <i class="fa-solid fa-database"></i>
+                            <span>CMDB Database</span>
+                        </button>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </li>
+                    <li class="sidebar-body-navigation-list-link">
+                        <button>
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>FX Owners Database</span>
+                        </button>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </li>
+                </ul>
+                <ul class="sidebar-body-navigation-list">
+                    <div class="sidebar-body-navigation-list-title">Support</div>
+                    <li class="sidebar-body-navigation-list-link">
+                        <button>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Website Manual</span>
+                        </button>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </li>
+                    <li class="sidebar-body-navigation-list-link">
+                        <button>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact Support</span>
+                        </button>
+                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                    </li>
+                </ul>
+
+            </div>
+            <div class="sidebar-body-controls">
+                <div class="sidebar-body-controls-refresh">
+                    <button>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <span>Sync Databases</span>
+                    </button>
+                </div>
+                <div class="sidebar-body-controls-website-mode">
+                    <button>
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                        <span>Website Mode</span>
+                    </button>
+                </div>
+                <div class="sidebar-body-controls-copy-rights">
+                    <button>
+                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </button>
+                </div>
+                <div class="sidebar-body-controls-copy-rights">
+                    <div>
+                        <span>Copyrights reserved to Mohey wael</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <main>
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="navbar-header">
+                <div class="sidebar-toggle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <span>Cabinet Inspector</span>
+            </div>
+            <div class="navbar-controls">
+                <div class="navbar-controls-notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="navbar-controls-settings">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="navbar-controls-profile">
+                    <div class="navbar-controls-profile-icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Body -->
+        <div class="main-body">
+
+            <div class="main-body-view">
+
+                <div class="main-body-view-header">
+                    <span>MSAN Cabinet Details</span>
+                    <!-- <i class="fa-solid fa-circle-info"></i> -->
+                    <div class="msan-cabinet-details-more-info-drawer-wrapper-button">
+                        <!-- here -->
+                        <span>more details</span>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </div>
+                </div>
+
+                <div class="line-separator"></div>
+
+                <div class="main-body-view-body">
+                    <div class="main-body-view-body-card">
+                        <div class="main-body-view-body-card-title">
+                            <i class="fa-solid fa-map"></i>
+                            <span>Cabinet Name</span>
+                        </div>
+                        <div class="main-body-view-body-card-text-section" data-msan-name-view>
+                            <span></span>
+                            <i class="fa-regular fa-clone text-section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="main-body-view-body-card">
+                        <div class="main-body-view-body-card-title">
+                            <i class="fa-solid fa-wifi"></i>
+                            <span>Cabinet IP</span>
+                        </div>
+                        <div class="main-body-view-body-card-text-section" data-msan-ip-view>
+                            <span></span>
+                            <i class="fa-regular fa-clone text-section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="main-body-view-body-card">
+                        <div class="main-body-view-body-card-title">
+                            <i class="fa-solid fa-display"></i>
+                            <span>VIC Service name</span>
+                        </div>
+                        <div class="main-body-view-body-card-text-section" data-msan-vic-service-name-view>
+                            <span></span>
+                            <i class="fa-regular fa-clone text-section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="main-body-view-body-card">
+                        <div class="main-body-view-body-card-title">
+                            <i class="fa-solid fa-life-ring"></i>
+                            <span>Cabine`t Model</span>
+                        </div>
+                        <div class="main-body-view-body-card-text-section" data-msan-cabinet-model-view>
+                            <span></span>
+                            <i class="fa-regular fa-clone text-section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="main-body-view-body-card">
+                        <div class="main-body-view-body-card-title">
+                            <i class="fa-solid fa-battery-three-quarters"></i>
+                            <span>Battery Status</span>
+                        </div>
+                        <div class="main-body-view-body-card-text-section" data-msan-battery-status-view>
+                            <span></span>
+                            <i class="fa-regular fa-clone text-section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="main-body-view-body-card">
+                        <div class="main-body-view-body-card-title">
+                            <i class="fa-solid fa-car-battery"></i>
+                            <span>Battery Type</span>
+                        </div>
+                        <div class="main-body-view-body-card-text-section" data-msan-battery-type-view>
+                            <span></span>
+                            <i class="fa-regular fa-clone text-section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="main-body-view-body-card">
+                        <div class="main-body-view-body-card-title">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Total Subscribers</span>
+                        </div>
+                        <div class="main-body-view-body-card-text-section" data-msan-total-subs-view>
+                            <span></span>
+                            <i class="fa-regular fa-clone text-section-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ======================================= -->
+
+            <div class="main-body-owners-infos-wrapper">
+                <div class="main-body-owners-infos">
+
+                    <div class="main-body-owners-infos-title">
+                        <span>Fault Owner</span>
+                        <!-- <div class="owners-count">12 Teams</div> -->
+                        <div class="mail-links">
+                            <i class="fa-solid fa-paperclip"></i>
+                            <div class="mail-links-dropdown">
+                                <div>Copy fault owners mails</div>
+                                <ul>
+                                    <li>
+                                        <button>
+                                            <i class="fa-solid fa-paperclip"></i>
+                                            Copy “ to ” mails
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <i class="fa-solid fa-paperclip"></i>
+                                            Copy “ cc ” mails
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line-separator"></div>
+
+                    <div class="main-body-owners-infos-owners">
+                        <button class="selected">REGION</button>
+                        <button>AVAILABILITY</button>
+                        <button>POWER-NOC</button>
+                    </div>
+
+                    <div class="main-body-owners-infos-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search ...">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+
+
+                    <div class="main-body-owners-infos-body-wrapper">
+                        <div class="main-body-owners-infos-body" data-owners-info>
+
+                            <template data-owners-template>
+                                <div class="main-body-owners-infos-body-owner-card">
+                                    <div class="role-name"></div>
+                                    <div class="mail">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <span><a href=""></a></span>
+                                    </div>
+                                    <div class="phone">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </template>
+<!-- 
+                            <div class="main-body-owners-infos-body-owner-card">
+                                <div class="role-name">General Manager</div>
+                                <div class="mail">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span><a href="mailto:ahmed.mohammed@te.eg">ahmed.mohammed@te.eg</a></span>
+                                </div>
+                                <div class="phone">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>20155318880</p>
+                                </div>
+                            </div> -->
+
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ======================================= -->
+
+            <div class="main-body-search">
+
+                <div class="main-body-search-controls">
+                    <div class="main-body-search-controls-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search by Cabinet code, cabinet name, exchange id, ...">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="main-body-search-controls-table-controls">
+                        <div class="main-body-search-controls-table-controls-total-NEs">
+                            <div class="text">Total NEs</div> <span class="text-value">1,650</span> <i
+                                class="fa-regular fa-clone"></i>
+                        </div>
+                        <div class="main-body-search-controls-table-controls-total-subs">
+                            <div class="text">Total Subs</div> <span class="text-value">1,250,600</span> <i
+                                class="fa-regular fa-clone"></i>
+                        </div>
+                        <div class="main-body-search-controls-table-controls-filter">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-body-search-table-wrapper">
+
+                    <div class="main-body-search-table-pagination">
+                    </div>
+
+                    <div class="main-body-search-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Vendor</td>
+                                    <td>MSAN Code</td>
+                                    <td>MSAN Name</td>
+                                    <td>City</td>
+                                    <td>Ex. Name</td>
+                                    <td>Total Sub.</td>
+                                </tr>
+                            </thead>
+
+                            <tbody data-cabinets-table>
+                                <template data-table-row-template>
+                                    <tr>
+                                        <td data-vendor></td>
+                                        <td data-msancode></td>
+                                        <td data-msanname></td>
+                                        <td data-city></td>
+                                        <td data-exchangename></td>
+                                        <td data-totalsubs></td>
+                                    </tr>
+                                </template>
+
+                                <!-- <tr>
+                                    <td>Huawei</td>
+                                    <td>07-4-24-05</td>
+                                    <td>كابينة العاشر من رمضان - 5 _ الحسينية</td>
+                                    <td>الحسينية</td>
+                                    <td>الحسينية الشرقية</td>
+                                    <td>593</td>
+                                </tr>
+                                -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

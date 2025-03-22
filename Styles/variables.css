@@ -1,0 +1,119 @@
+:root {
+    /* Colors */
+    --clr-bg: #ffffff;
+    /* --clr-bg: #0D0D0D; */
+
+    --clr-text: #000000;
+    /* --clr-text: #0D0D0D; */
+
+    --clr-text-alt: #ffffff;
+    /* --clr-text-alt: #0D0D0D; */
+
+    --clr-primary: #B44CFF;
+    /* --clr-primary: #0D0D0D; */
+
+    --clr-secondary: #000000;
+
+    --clr-nutral: #EEEEEE;
+    /* --clr-nutral: #0D0D0D; */
+
+    --clr-border: #D9D9D9;
+    /* --clr-border: #0D0D0D; */
+
+    --clr-border-hovered: #c5c4c4;
+    /* --clr-border-hovered: #0D0D0D; */
+
+    /* Numerical */
+    --padding: 1.25rem;
+    /* --padding-sm: 0.625rem; */
+
+    --gap: 1rem;
+    --gap-sm: 0.625rem;
+
+    --border-radius: 0.625rem;
+    --border-radius-sm: 0.3125rem;
+    --border: .5px solid;
+    --boder-width: .5px;
+
+    /* Status */
+    --sidebar-collapse: 5rem;
+
+    /* Animation */
+    --transition: 150ms ease-in-out;
+
+    /* Height */
+    --search-height: 2.5rem;
+
+    /* Width */
+    --body-view-width: 50rem;
+    --table-width: 7rem;
+
+    /* Typography */
+    --font-size-h2: 1.1rem;
+    --font-size-h3: 1.2rem;
+}
+
+
+/* Classes */
+.sidebar-collapse {
+    width: var(--sidebar-collapse) !important;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.line-separator {
+    height: 1px;
+    background-color: var(--clr-border-hovered);
+    width: 100%;
+}
+
+/* Refresh animation */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the refresh icon */
+.refresh-icon {
+    display: inline-block;
+    animation: spin 800ms linear infinite;
+}
+
+
+/* Dark Mode */
+.darkmode {
+    /* Dark Mode Colors */
+
+    --clr-bg: #121212;
+    /* Dark background */
+    
+    --clr-text: #EAEAEA;
+    /* Light text for contrast */
+    
+    --clr-text-alt: #1E1E1E;
+    /* Darker text alternative */
+    
+    --clr-primary: #9E57FF;
+    /* Slightly muted purple for dark mode */
+    
+    --clr-secondary: #EAEAEA;
+    /* Light gray for secondary elements */
+    
+    --clr-nutral: #242424;
+    /* Dark gray for neutral backgrounds */
+    
+    --clr-border: #3A3A3A;
+    /* Subtle border for dark mode */
+    
+    --clr-border-hovered: #5A5A5A;
+    /* Slightly lighter for hover effects */
+
+}
