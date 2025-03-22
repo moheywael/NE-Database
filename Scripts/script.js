@@ -69,7 +69,7 @@ sidebarSyncDataButton.addEventListener("click", () => {
 
     setTimeout(() => {
         icon.classList.remove("refresh-icon");
-        showToast("Your changes have been saved!");
+        showToast("Databases synchronized successfully!");
     }, 800);
 });
 
