@@ -50,21 +50,46 @@ function fetchCabinetData() {
 }
 
 // Fetch and store Owners data
-function fetchOwnersData() {
-    return fetch("./data/owners_data.json")
-        .then(res => res.json())
-        .then(data => {
-            if (!Array.isArray(data) || data.length === 0) {
-                console.error("Error: Owners data is empty or not an array.");
-                return [];
-            }
-            return data;
-        })
-        .catch(error => {
-            console.error("Error fetching owners data:", error);
+// function fetchOwnersData() {
+//     return fetch("./data/owners_data.json")
+//         .then(res => res.json())
+//         .then(data => {
+//             if (!Array.isArray(data) || data.length === 0) {
+//                 console.error("Error: Owners data is empty or not an array.");
+//                 return [];
+//             }
+//             return data;
+//         })
+//         .catch(error => {
+//             console.error("Error fetching owners data:", error);
+//             return [];
+//         });
+// }
+
+// ------------------------------------------
+
+// Fetch and store Owners data
+async function fetchOwnersData() {
+    try {
+        const [data1, data2] = await Promise.all([
+            fetch("./data/owners_data-1.json").then(res => res.json()),
+            fetch("./data/owners_data-2.json").then(res => res.json())
+        ]);
+
+        if (!Array.isArray(data1) || !Array.isArray(data2)) {
+            console.error("Error: One or both JSON files contain invalid data.");
             return [];
-        });
+        }
+
+        const data = [...data1, ...data2]; // Merging both arrays
+        return data; // Returning merged data
+    } catch (error) {
+        console.error("Error fetching owners data:", error);
+        return [];
+    }
 }
+
+// ------------------------------------------
 
 // Function to initialize and display data
 function initializeData() {
